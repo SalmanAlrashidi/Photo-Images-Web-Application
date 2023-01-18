@@ -31,9 +31,9 @@ def addLike(id,url):
     try:
         # Connect to the MySQL database
         connection = mysql.connector.connect(host='localhost',
-        database='jars',
-        user='salman',
-        password='pass')
+        database='',
+        user='',
+        password='')
         # If the connection is successful, add the id and url to the "liked" table
         if connection.is_connected():
             cursor = connection.cursor()
@@ -56,9 +56,9 @@ def getLikes():
     #Creates connection with the DB
     try:
         connection = mysql.connector.connect(host='localhost',
-        database='jars',
-        user='salman',
-        password='pass')
+        database='',
+        user='',
+        password='')
 
         #If connection is successful, retrieves all records from table liked
         if connection.is_connected():
@@ -84,9 +84,9 @@ def deletePhoto(id):
     #Creates connection with the DB
     try:
         connection = mysql.connector.connect(host='localhost',
-        database='jaars',
-        user='Aalayah',
-        password='password')
+        database='',
+        user='',
+        password='')
 
         #If connection is successful, retrieves all records from table liked
         if connection.is_connected():
